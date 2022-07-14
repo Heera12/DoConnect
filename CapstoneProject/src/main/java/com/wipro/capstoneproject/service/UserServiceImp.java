@@ -98,7 +98,7 @@ public class UserServiceImp implements IUserService {
 
 		boolean flag = false;
 
-		if (user.getUname().length() >= 2 && user.getEmail().length() >= 2 && user.getPassword().length() >= 2 && user.getRole()=="admin"|| user.getRole() == "user") {
+		if (user.getUname().length() >= 2 && user.getEmail().length() >= 2 && user.getPassword().length() >= 2 && ("admin".equalsIgnoreCase(user.getRole())|| "user".equalsIgnoreCase(user.getRole()))) {
 
 			flag = true;
 		}

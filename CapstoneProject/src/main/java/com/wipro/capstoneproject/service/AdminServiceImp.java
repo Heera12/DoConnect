@@ -103,7 +103,7 @@ public class AdminServiceImp implements IAdminService {
 		boolean flag = false;
 
 		if (adminDTO.getName().length() > 4 && adminDTO.getEmail().length() > 4
-				&& adminDTO.getPassword().length() > 4 && adminDTO.getRole()=="admin") {
+				&& adminDTO.getPassword().length() > 4 && ("admin".equalsIgnoreCase(adminDTO.getRole()))) {
 
 			flag = true;
 		}
