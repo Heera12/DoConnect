@@ -6,4 +6,6 @@ import com.wipro.capstoneproject.entity.User;
 
 public interface IUserRepository extends JpaRepository<User, Long> {
 
+	public User findByUname(String uname);
+	
 }
