@@ -17,13 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.wipro.capstoneproject.dto.AnswersDTO;
 import com.wipro.capstoneproject.entity.Answers;
-import com.wipro.capstoneproject.entity.Questions;
 import com.wipro.capstoneproject.service.AnswerServiceImpl;
 import com.wipro.capstoneproject.service.EmailServiceImpl;
 
 @RestController
 @RequestMapping("/cap/project/answers")
-@CrossOrigin(origins="http://localhost:4200")
 public class AnswerController {
 	
 	

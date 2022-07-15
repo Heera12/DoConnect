@@ -22,8 +22,6 @@ import com.wipro.capstoneproject.service.EmailServiceImpl;
 import com.wipro.capstoneproject.service.QuestionServiceImp;
 
 @RestController
-@RequestMapping("/cap/project/quest")
-@CrossOrigin(origins="http://localhost:4200")
 public class QuestionController 
 {
     @Autowired

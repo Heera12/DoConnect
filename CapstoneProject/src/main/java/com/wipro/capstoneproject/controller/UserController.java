@@ -26,7 +26,7 @@ import com.wipro.capstoneproject.service.UserServiceImp;
 
 @RestController
 @RequestMapping("/cap/project/users")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin
 public class UserController {
 
 	@Autowired

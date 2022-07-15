@@ -31,7 +31,7 @@ public class LoginServiceImpl implements ILoginService {
 		
 		login.setUid(randomNum);
 		login.setUname(user.getUname());
-		login.setLoginStatus("loggein");
+		login.setLoginStatus("logged in");
 		login.setLoginTime(now);
 
 		
