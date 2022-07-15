@@ -23,7 +23,6 @@ public class AnswerServiceImpl implements IAnswerService{
 		Answers answers = new Answers();
 		answers.setAnswerId(answersDTO.getAnswerId());
 		answers.setAnswer(answersDTO.getAnswer());
-		answers.setQuestionId(answersDTO.getQuestionId());
 		
 		return repo.save(answers);
 	}
@@ -34,7 +33,6 @@ public class AnswerServiceImpl implements IAnswerService{
 		Answers answers = new Answers();
 		answers.setAnswerId(answersDTO.getAnswerId());
 		answers.setAnswer(answersDTO.getAnswer());
-		answers.setQuestionId(answersDTO.getQuestionId());
 		
 		return repo.save(answers);
 	}

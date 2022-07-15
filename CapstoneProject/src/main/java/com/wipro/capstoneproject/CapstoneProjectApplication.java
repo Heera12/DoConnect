@@ -17,10 +17,13 @@ public class CapstoneProjectApplication {
 	}
 	
 	
-	  @Bean public RestTemplate getRestTemplate() {
+	  @Bean 
+	  public RestTemplate getRestTemplate() {
 	  
 	  return new RestTemplate();
 	  
 	  }
+	  
+	  
 	 
 }

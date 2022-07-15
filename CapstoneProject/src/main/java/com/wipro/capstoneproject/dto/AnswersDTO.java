@@ -12,5 +12,5 @@ public class AnswersDTO {
 	
 	private long answerId;
 	private String answer;
-	private long questionId;
+	public boolean status;
 }
