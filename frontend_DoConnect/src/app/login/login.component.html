@@ -12,11 +12,17 @@
 				<label for="chk" aria-hidden="true">Login</label> 
 				<div style="color: white;" class="mb-3">
 					<label for="uname" class="form-label"></label>
-					<input formControlName="uname" class="form-control" type="text" placeholder="UserId"> 
+					<input formControlName="uname" class="form-control" type="text" placeholder="Enter your Username"> 
+				  </div>
+				  <div class="errors">
+					<span *ngIf="form.get('uname')?.hasError('required')">Username is Required*</span> 
 				  </div>
 				  <div style="color: white;" class="mb-3">
 					<label for="password" class="form-label"></label>
 					<input formControlName="password" class="form-control" type="password" placeholder="Password"> 
+				  </div>
+				  <div class="errors">
+					<span *ngIf="form.get('password')?.hasError('required')">Password is Required*</span>
 				  </div>
 				<div class="log">
 					<button>Login</button>

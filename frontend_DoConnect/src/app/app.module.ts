@@ -11,7 +11,7 @@ import { UserhomeComponent } from './userhome/userhome.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { UnapprovedComponent } from './unapproved/unapproved.component';
 import { ChatComponent } from './chat/chat.component';
-
+import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { ChatComponent } from './chat/chat.component';
     UserhomeComponent,
     AdminhomeComponent,
     UnapprovedComponent,
-    ChatComponent 
+    ChatComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

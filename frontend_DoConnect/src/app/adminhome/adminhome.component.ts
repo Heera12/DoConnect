@@ -8,18 +8,14 @@ import { ServicesService } from '../services.service';
 })
 export class AdminhomeComponent implements OnInit {
 
-  questions: any;
-  answers:any;
   constructor(private service : ServicesService) { }
 
   ngOnInit(): void {
-    this.service.getQuestions().subscribe(data=>{
-      this.questions=data;
-    })
-    this.service.getAnswers().subscribe(data=>{
-      this.answers=data;
-    })
-
-  }
+  
+    }
+    
 
 }
+
+
+  

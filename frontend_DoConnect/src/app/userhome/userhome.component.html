@@ -22,12 +22,15 @@
                     <li><a href="/userhome">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="/chat">Chat</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/login">Signout</a></li>
                 </div>
                 <li class="search-icon">
                     <input type="search" placeholder="Search">
+                    <ul>
+                <li *ngFor="let quest of questions" ></li></ul>
                     <label class="icon">
-                        <span class="fas fa-search"></span>
+                        
+                        <span class="fas fa-search"><button routerLink="/search"></button></span>
                     </label>
                 </li>
             </ul>
@@ -92,3 +95,4 @@
 </footer>
 
 </html>
+

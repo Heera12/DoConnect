@@ -27,11 +27,11 @@ export class SignupComponent implements OnInit {
 
   // create the form object.
   form = new FormGroup({
-      fullName : new FormControl('' , Validators.required),
-      email : new FormControl('' , Validators.required),
-      password : new FormControl('' , Validators.required),
-      confirmPassword : new FormControl('' , Validators.required),
-      role : new FormControl('' , Validators.required),
+      fullName : new FormControl(null , Validators.required),
+      email : new FormControl(null, [Validators.required, Validators.email]),
+      password : new FormControl(null , Validators.required),
+      confirmPassword : new FormControl(null, Validators.required),
+      role : new FormControl(null , Validators.required),
   });
 
   AdminForm()
@@ -51,9 +51,7 @@ export class SignupComponent implements OnInit {
 
         this.adminService.signupUser(this.adminDetail).subscribe(
           response => {
-              
-  
-              
+            
                 this.router.navigate(['login']);
              
           },

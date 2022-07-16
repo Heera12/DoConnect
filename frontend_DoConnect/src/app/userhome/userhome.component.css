@@ -7,7 +7,7 @@
 }
 
 nav{
-   background: url("https://i.pinimg.com/736x/4a/4c/04/4a4c046a0390ce57387bbe8284156652.jpg") no-repeat center/ cover;   
+   background: url("https://i.pinimg.com/736x/4a/4c/04/4a4c046a0390ce57387bbe8284156652.jpg");   
    padding: 10px 40px 10px 70px ;
    border: 1px solid rgb(250, 242, 242);
    border-left: none;
@@ -163,4 +163,7 @@ ol li {
    padding: 15px 0;
    text-align: center;
    border-top: solid gray;
+}
+searchtxt{
+   text-align: left;
 }

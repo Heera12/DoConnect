@@ -10,7 +10,7 @@ body{
 }
 .main{
 	width: 650px;
-	height: 500px;
+	height: 700px;
 	background: red;
 	overflow: hidden;
 	background: url("https://i.pinimg.com/736x/4a/4c/04/4a4c046a0390ce57387bbe8284156652.jpg") no-repeat center/ cover;
@@ -30,7 +30,7 @@ label{
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
-	margin: 60px;
+	margin: 45px;
 	font-weight: bold;
 	cursor: pointer;
 	transition: .5s ease-in-out;
@@ -41,20 +41,20 @@ input{
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
-	margin: 10px auto;
+	margin: 20px auto;
 	padding: 10px;
 	border: none;
 	outline: none;
 	border-radius: 5px;
 }
 button{
-	width: 60%;
+	width: 30%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	color: #fff;
-	background: #573b8a;
+	color: rgb(5, 4, 4);
+	background: #d8d5de;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -65,7 +65,7 @@ button{
 	cursor: pointer;
 }
 button:hover{
-	background: #6d44b8;
+	background: #466f7b;
 }
 .login{
 	height: 460px;
@@ -95,11 +95,7 @@ h3{
 	font-weight: bold;
 	position: relative;
 }
-#btn-login{
-		height: 40px;
-		
-	
-}
+
 form-group{
     width: 60%;
 	height: 40px;
@@ -120,7 +116,7 @@ form-group{
 }
 
 select{
-    width: 65%;
+    width: 63%;
 	height: 40px;
 	background: #e0dede;
 	justify-content: center;
@@ -128,5 +124,15 @@ select{
 	margin: 10px auto;
 	padding: 10px;
 	border-radius: 5px;
+	color: black;
     
+}
+#emailHelp{
+	color: white;
+	padding-left: 120px ;
+}
+span{
+	color: rgb(231, 24, 24);
+	padding-left: 120px ;
+	font-weight: bold;
 }

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(236, 215, 215);
+    background: linear-gradient(to bottom,#08080e,#7dbad0,#15151d);
     font-family: Arial;
 }
 
@@ -17,8 +17,22 @@ body{
     text-align: center;
 }
 
+.header {
+    padding: 2px;
+    text-align: center;
+   
+    background: linear-gradient(to bottom, #08080e, #7dbad0, #15151d);
+    color: white;
+    font-size: 10px;
+  }
+
 .navbar a:hover{
-    background: #2e389e;
+    background: blue;
+    text-decoration: none;
+}
+label{
+    background-color: #08080e;
+    color: white;
 }
 
 .active {
@@ -27,19 +41,19 @@ body{
     background: rgb(33, 55, 132);
     overflow: hidden;
     border-radius: 10px;
-    color: #f8f5f5;
+    color: #f2f2f2;
     padding: 20px 16px;
     text-decoration: none;
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
-
+    background-image: url("https://i.pinimg.com/736x/4a/4c/04/4a4c046a0390ce57387bbe8284156652.jpg");
+    background-repeat: repeat;
 }
 *{
     margin: 0;
     padding: 0;
-    border-radius: 10px;
-    color: #fdfbfb;
+    color: #f2f2f2;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
@@ -49,11 +63,15 @@ body{
     text-decoration: none;
     font-size: 20px;
     padding: 0 px;
-    padding-left: 800px;
-    color: white;
+    padding-left: 850px;
 }
-.logo{
-    color:white;
+.pending1{
+    text-align:end;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 px;
+    padding-left: 50px;
 }
 .active ul{
     display: flex;
@@ -64,103 +82,127 @@ body{
 }
 .button{
 
-        width: 70px;
+        width: 100px;
         height: 40px;
-        margin : 0 auto;
-        color: #fff;
-        background: #573b8a;
+        margin : 10px;
+        color: #ffffff;
+        background: #161616;
         font-size: 1em;
         font-weight: bold;
         outline: none;
         border: none;
-        border-radius: 5px;
         text-align: center;
-    
+        margin-left: 470px;
+        border-radius: 5px;
+}
+.button1{
+
+    width: 100px;
+    height: 40px;
+    margin : 10px;
+    color: #ffffff;
+    background: #161616;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.button2{
+
+    width: 100px;
+    height: 40px;
+    margin : 10px;
+    color: #ffffff;
+    background: #161616;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.logo{
+    color:white;
+    font-size: 30px;
 }
 input{
     width: 100%;
 	height: 100px;
     border: none;
+    background: white;
+    color: #08080e;
 }
-label{
-    font-size: 20px;
+.col-4{
+    font-size: 25px;
     font-weight: bold;
+    color: #161616;
+    background: #f2f2f2;
 }
-.form-control
-{
-    color:black;
-}
-.header {
-    padding: 2px;
-    text-align: center;
-   
-    background: linear-gradient(to bottom, #08080e, #7dbad0, #15151d);
-    color: white;
-    font-size: 10px;
-  }
-
-  footer{
+footer{
     
     color: white;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #08080e, #7dbad0, #15151d);
-}
-.container{
+ }
+ .container{
     display: flex;
     gap: 20px;
     padding: 50px 20px;
-}
-.about {
+ }
+ .about {
     
     flex-grow: 1;
     flex-basis: 100%;
     text-align: center;
-}
-.services{
+ }
+ .services{
    
     flex-grow: 1;
     flex-basis: 70%;
     text-align: center;
-}
-.contact{
+ }
+ .contact{
     
     flex-grow: 1;
     flex-basis: 100%;
     text-align: center;
-}
-.container h3{
+ }
+ .container h3{
     margin-bottom: 20px;
     font-size: 20px;
-}
-.services ul{
+ }
+ .services ul{
     list-style-type: none;
     line-height: 1.6;
-
-}
-.services a{
+ 
+ }
+ .services a{
     color: white;
     text-decoration: none;
-}
-.services a:hover{
+ }
+ .services a:hover{
     color: lightblue;
     text-decoration: underline;
-}
-.contact ul{
+ }
+ .contact ul{
     list-style-type: none;
     line-height: 2;
-
-}
-.contact a{
+ 
+ }
+ .contact a{
     color: white;
     text-decoration: none;
-}
-.contact a:hover{
+ }
+ .contact a:hover{
     color: lightblue;
     text-decoration: underline;
-}
-.copyright{
+ }
+ .copyright{
     padding: 15px 0;
     text-align: center;
     border-top: solid gray;
-}
+ }
+ 

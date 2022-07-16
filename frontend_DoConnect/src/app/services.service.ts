@@ -8,6 +8,9 @@ import { AdminDetail } from './classes/admin-details';
   providedIn: 'root'
 }) 
 export class ServicesService {
+  search() {
+    throw new Error('Method not implemented.');
+  }
   createUser: any;
 
   constructor(private http:HttpClient) { }
@@ -25,9 +28,6 @@ getUsers():Observable<object>
 {
   return this.http.get("http://localhost:9090/cap/project/users/getall");
 }
-addUser(user:object):Observable<object>{
-  return this.http.post("http://localhost:9090/cap/project/users/add", user);
-}
 
 signupUser(adminDetail : AdminDetail) : Observable<any>
 {
@@ -39,10 +39,12 @@ loginUser(adminDetail : AdminDetail) : Observable<any>
     return this.http.post("http://localhost:9090/cap/project/users/login",adminDetail);
 }
 
-login(user:object):Observable<object>{
-  console.log(user)
-  return this.http.post("http://localhost:9090/cap/project/users/login",user);
-}
+createQuestions(quest:object):Observable<object>{
+  return this.http.post<any>("http://localhost:9090/cap/project/quest/add",quest);
+  }
+
+
+
 
 getPendingQuestions():Observable<object>{
   return this.http.get("http://localhost:9090/cap/project/quest/getall");
@@ -51,9 +53,8 @@ getPendingQuestions():Observable<object>{
 getPendingAnswers():Observable<object>{
   return this.http.get("http://localhost:9090/cap/project/quest/getall");
 }
-createQuestions(questions:object):Observable<object>{
-  return this.http.post<any>("http://localhost:9090/cap/project/quest/add"+'save-question',questions)
-  }
+
+
 
 createAnswers(questions:object):Observable<object>{
   return this.http.post<any>("http://localhost:9090/cap/project/answers/add"+'save-answer',questions)

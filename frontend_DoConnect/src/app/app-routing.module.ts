@@ -16,6 +16,7 @@ const routes: Routes = [
 {path :'adminhome' ,component: AdminhomeComponent},
 {path :'unapproved' ,component: UnapprovedComponent},
 {path :'chat' ,component: ChatComponent},
+{path:'search/:searchTerm', component:UserhomeComponent}
 
 
 ];

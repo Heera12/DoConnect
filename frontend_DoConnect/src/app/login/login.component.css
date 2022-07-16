@@ -47,7 +47,7 @@ input{
 	border-radius: 5px;
 }
 button{
-	width: 40%;
+	width: 30%;
 	height: 40px;
 	margin: 30px auto;
 	justify-content: center;
@@ -71,16 +71,6 @@ button:hover{
 	border-radius: 60% / 10%;
 	transform: translateY(-0px);
 	transition: .8s ease-in-out;
-}
-
-#chk:checked ~ .login{
-	transform: translateY(-250px);
-}
-#chk:checked ~ .login label{
-	transform: scale(1);	
-}
-#chk:checked ~ .signup label{
-	transform: scale(.6);
 }
 
 h3{
@@ -112,4 +102,9 @@ select{
 }
 .log{
 	margin: 50px;
+}
+span{
+	color: rgb(231, 24, 24);
+	padding-left: 60px ;
+	font-weight: bold;
 }
