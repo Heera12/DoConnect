@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DoConnect</title>
+<link rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+		<div class="login">
+			<form [formGroup]="form" #LoginInformation (ngSubmit)="Login()">
+				<label for="chk" aria-hidden="true">Login</label> 
+				<div style="color: white;" class="mb-3">
+					<label for="uname" class="form-label"></label>
+					<input formControlName="uname" class="form-control" type="text" placeholder="UserId"> 
+				  </div>
+				  <div style="color: white;" class="mb-3">
+					<label for="password" class="form-label"></label>
+					<input formControlName="password" class="form-control" type="password" placeholder="Password"> 
+				  </div>
+				<div class="log">
+					<button>Login</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>

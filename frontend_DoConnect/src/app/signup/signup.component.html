@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>DoConnect</title>
+<link rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+		<div class="signup">
+			<div>
+
+
+
+			<form [formGroup]="form" #AdminInformation (ngSubmit)="AdminForm()">
+				
+
+        <input formControlName="fullName" class="form-control" type="text" placeholder="Full Name"> 
+        
+
+				
+        <input formControlName="email" class="form-control" type="text" placeholder="Email"> 
+
+
+
+				
+        <input formControlName="password" class="form-control" type="password" placeholder="password"> 
+
+
+        
+        <input formControlName="confirmPassword" class="form-control" type="password" placeholder="Confirm Passsword"> 
+
+        
+        
+
+
+        
+          <div class="form-control">
+            <select formControlName="role"> 
+  <option value="" disabled selected hidden>Choose your role</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>	
+</div>
+
+
+        
+        
+				<button>Sign up</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
